@@ -5,6 +5,8 @@ html, body
 	height: 100%;
 
 	font-family: 'Slabo 27px', serif;
+
+	background: #000;
 }
 
 .center-y
