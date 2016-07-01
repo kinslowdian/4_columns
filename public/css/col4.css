@@ -189,12 +189,18 @@ h2
 
 @media (min-width: 300px)
 {
-
+	.col
+	{
+		width: 100%;
+	}
 }
 
 @media (min-width: 600px)
 {
-
+	.col
+	{
+		width: 50%;
+	}
 }
 
 @media (min-width: 900px)
@@ -204,5 +210,8 @@ h2
 
 @media (min-width: 1200px)
 {
-
+	.col
+	{
+		width: 25%;
+	}
 }
