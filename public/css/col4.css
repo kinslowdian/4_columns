@@ -34,13 +34,16 @@ html, body
 	width: 25%;
 	height: 100%;
 	position: relative;
-	display: inline-block;
+/*	display: inline-block;*/
 
 	margin: 0;
 	padding: 0;
 
 	font-size: 60px;
 	color: #fff;
+
+	display: block;
+	float: left;
 }
 
 .col-0
