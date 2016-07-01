@@ -21,8 +21,8 @@ html, body
 
 .tween-fx
 {
-	-webkit-transition: 600ms ease-out;
-	transition: 600ms ease-out;
+	-webkit-transition: 1600ms ease-out;
+	transition: 1600ms ease-out;
 }
 
 h1, h2
@@ -33,28 +33,32 @@ h1, h2
 	font-size: 1em;
 	line-height: 1;
 	text-align: center;
-	/*text-transform: uppercase;*/
-	text-decoration: underline;
-
-	-webkit-text-decoration-skip: ink;
-	text-decoration-skip: ink;
 }
 
 h1
 {
 	font-size: 180px;
 	color: #fff;
+
+	text-transform: uppercase;
 }
 
 .h1-default
 {
 	opacity: 0;
+
+	-webkit-filter: blur(40px);
+	filter: blur(40px);
 }
 
 h2
 {
 	font-size: 60px;
 	color: #fff;
+
+	text-decoration: underline;
+	-webkit-text-decoration-skip: ink;
+	text-decoration-skip: ink;
 }
 
 .page-wrapper
