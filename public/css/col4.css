@@ -76,7 +76,7 @@ html, body
 {
 	width: 100%;
 	position: relative;
-	margin: 2% auto;
+	margin: 2% auto 0 auto;
 }
 
 .feature-block-main
