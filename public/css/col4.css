@@ -6,7 +6,7 @@ html, body
 
 	font-family: 'Slabo 27px', serif;
 
-	background: #000;
+	background: rgb(24, 24, 36);
 }
 
 .center-y
@@ -72,6 +72,14 @@ h2
 	text-decoration-skip: ink;
 }
 
+h3
+{
+	font-size: 40px;
+	color: #fff;
+
+	text-transform: uppercase;
+}
+
 .page-wrapper
 {
 	width: 100%;
@@ -80,7 +88,100 @@ h2
 
 	-webkit-transform-origin: 50% 100%;
 	transform-origin: 50% 100%;
+
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
 }
+
+.nav-wrapper
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+
+	font-size: 60px;
+}
+
+.nav-wrapper h2
+{
+	width: 80%;
+	text-align: center;
+
+	font-size: 1em;
+	letter-spacing: 0.2em;
+
+	margin: 0 auto;
+
+	padding: 1em 0;
+
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav-wrapper .line-l
+{
+	width: 80%;
+	height: 2px;
+
+	position: relative;
+	margin: 0 auto;
+	background: #e95dbe;
+}
+
+.nav-wrapper .line-l:first-of-type
+{
+	margin-bottom: 2em;
+}
+
+.nav-wrapper .nav-content
+{
+	width: 60%;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
+
+.nav-wrapper .nav-content ul
+{
+	width: 100%;
+	position: relative;
+
+	font-size: 0.6em;
+	letter-spacing: 0.2em;
+
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav-wrapper .nav-content li
+{
+	text-align: center;
+	margin: 1em auto;
+}
+
+.nav-wrapper .nav-content li:nth-child(0n+1)
+{
+	color: #0098cd;
+}
+
+.nav-wrapper .nav-content li:nth-child(0n+2)
+{
+	color: #f5d313;
+}
+
+.nav-wrapper .nav-content li:nth-child(0n+3)
+{
+	color: #ff246d;
+}
+
+.nav-wrapper .nav-content li:nth-child(0n+4)
+{
+	color: #2db035;
+}
+
 
 .tween-nav
 {

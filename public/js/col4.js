@@ -16,8 +16,8 @@ function displayList_init()
 	displayList = {};
 	displayList.body		= document.querySelector("body");
 	displayList.pageWrapper = document.querySelector(".page-wrapper"); 
-	displayList.mainHeader 	= document.querySelector(".page-content header h1");
-	displayList.navIcon		= document.querySelector(".page-content .nav-icon");
+	displayList.mainHeader 	= document.querySelector(".page-wrapper header h1");
+	displayList.navIcon		= document.querySelector(".page-wrapper .nav-icon");
 
 	nav_init();
 
