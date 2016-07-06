@@ -15,9 +15,12 @@ function displayList_init()
 {
 	displayList = {};
 	displayList.body		= document.querySelector("body");
+
 	displayList.pageWrapper = document.querySelector(".page-wrapper"); 
 	displayList.mainHeader 	= document.querySelector(".page-wrapper header h1");
 	displayList.navIcon		= document.querySelector(".page-wrapper .nav-icon");
+
+	displayList.closeIcon	= document.querySelector(".nav-wrapper .close-icon");
 
 	nav_init();
 
@@ -35,6 +38,10 @@ function nav_init()
 	nav.open = false;
 
 	displayList.navIcon.addEventListener("click", nav_event, false);
+	displayList.closeIcon.addEventListener("click", nav_event, false);
+
+	displayList.pageWrapper.addEventListener("webkitTransitionEnd", nav_unLock, false);
+	displayList.pageWrapper.addEventListener("transitionend", nav_unLock, false);
 }
 
 function nav_event(event)
@@ -43,12 +50,10 @@ function nav_event(event)
 
 	if(nav.open)
 	{
-		nav.open = false;
+		// nav.open = false;
 
-		displayList.body.classList.remove("nav-lock");
+		// displayList.body.classList.remove("nav-lock");
 		displayList.pageWrapper.classList.remove("page-wrapper-nav-open");
-
-		displayList.pageWrapper.removeEventListener("click", nav_event, false);
 	}
 
 	else
@@ -57,14 +62,14 @@ function nav_event(event)
 
 		displayList.body.classList.add("nav-lock");
 		displayList.pageWrapper.classList.add("page-wrapper-nav-open");
-
-		// nav_help();
-		
-		exitFrame = setTimeout(nav_help, 20);
 	}
 }
 
-function nav_help()
+function nav_unLock(event)
 {
-	displayList.pageWrapper.addEventListener("click", nav_event, false);
+	if(nav.open)
+	{
+		nav.open = false;
+		displayList.body.classList.remove("nav-lock");
+	}
 }
